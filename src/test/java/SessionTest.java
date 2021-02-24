@@ -1,10 +1,13 @@
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalTime;
+
 public class SessionTest {
 
   @Test
   void check_that_session_is_well_created() {
-    // TODO: If I create a Session 'math' between 14:00 and 16:00, then It should start at 14:00 and finish at 16:00
+    Session s = new Session( "test", LocalTime.of( 14, 0, 0), LocalTime.of( 15, 0, 0));
+
   }
 
   @Test

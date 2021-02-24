@@ -25,12 +25,25 @@ L'objectif de ce TP est de concevoir un outil de reporting pour générer les pr
     - dire s'il était absent (il est resté connecté moins de 15 minutes pendant le cours)
     - donner le temps en minutes qu'il a passé connecté durant le cours
 
+
+## Avant de commencer
+
+Vous créerez impérativement un commit à la fin de chaque exercice.
+Pour créer un commit :
+```
+git add .
+git commit -m "exercice N"
+```
+
 Pour les horaires, utiliser la classe `LocalTime` qui possède un ensemble de fonctions utiles pour la manipulation du temps (notamment les fonctions `until`, `isBefore`, `isAfter).
 
 On peut créer un objet `LocalTime` avec la méthode `of` : LocalTime now = LocalTime.of(14, 0, 0)`
 Un test doit comporter au moins une assertion pour être valide (sans assertion, un test n'a aucune valeur')
 
-/!\ Vous devez faire les exercices dans l'ordre établi : chaque exercice dépend du précédent
+** Vous devez faire les exercices dans l'ordre établi : chaque exercice dépend du précédent **
+
+
+
 
 ## Exercice 1 : Créer la classe Session représentant un cours
 
@@ -79,5 +92,5 @@ Les tests de l'exercice 3 vont devoir être réécrits pour être conforme aux m
 
 L'objectif de cet exercice est d'écrire les tests de façon à limiter l'impact des changements de code sur les tests
 
-4.1. Remplir les méthodes du fichier AttendeeTestHelper.java de façon à ce que les tests du fichier AttendeeTestGherkin 1 à 3 passent
-4.2. Ecrire les tests restant sous leur nouvelle forme
+- 4.1. Remplir les méthodes du fichier AttendeeTestHelper.java de façon à ce que les tests du fichier AttendeeTestGherkin 1 à 3 passent
+- 4.2. Ecrire les tests restant sous leur nouvelle forme
