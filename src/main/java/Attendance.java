@@ -20,6 +20,9 @@ public class Attendance {
     }
 
     public int duration() {
+        if( heureConnexion.isAfter( heureDeconnexion)){
+            return 0;
+        }
         return (int) heureConnexion.until(heureDeconnexion, ChronoUnit.MINUTES);
     }
 
@@ -30,7 +33,7 @@ public class Attendance {
     @Override
     public boolean equals(Object other) {
         Attendance otherAttendence = (Attendance) other;
-        if(otherAttendence.startAt() == this.startAt() && otherAttendence.endAt() == this.endAt()) {
+        if(otherAttendence.startAt().equals(this.startAt()) && otherAttendence.endAt().equals(this.endAt())) {
             return true;
         }
         else {
