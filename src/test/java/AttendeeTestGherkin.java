@@ -1,4 +1,4 @@
-import attendees.Attendee;
+/*import attendees.Attendee;
 import attendees.Session;
 import org.junit.jupiter.api.Test;
 
@@ -101,4 +101,4 @@ class AttendeeTestHelper {
     // TODO Add an assertion validating that bob spent 'timeSpent' connected during the math session
     return this;
   }
-}
+}*/
