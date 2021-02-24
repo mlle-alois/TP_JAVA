@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AttendanceTest {
   @Test
@@ -36,5 +37,12 @@ public class AttendanceTest {
     assertEquals(15, a.endAt().getHour());
     assertEquals(30, a.endAt().getMinute());
     assertEquals(60, a.duration());
+  }
+
+  @Test
+  void test4() {
+    Attendance a = new Attendance(LocalTime.of(14,30,0), LocalTime.of(15,30,0));
+    Attendance a2 = new Attendance(LocalTime.of(14,30,0), LocalTime.of(15,30,0));
+    assertTrue(a.equals(a2));
   }
 }
