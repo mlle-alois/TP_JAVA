@@ -1,10 +1,10 @@
-import attendees.Attendee;
-import attendees.Session;
+/*import attendees.Attendee;
+import attendees.Session;*/
 import org.junit.jupiter.api.Test;
 
 public class AttendeeTestGherkin {
 
-  @Test
+  /*@Test
   void test1() {
     during_the_math_lesson()
         .when_bob_is_connected_between("17:01", "17:59")
@@ -100,5 +100,5 @@ class AttendeeTestHelper {
   public AttendeeTestHelper then_bob_spent_minutes_in_class(int timeSpent) {
     // TODO Add an assertion validating that bob spent 'timeSpent' connected during the math session
     return this;
-  }
+  }*/
 }
