@@ -1,0 +1,64 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+.flattened-pom.xml
+
+
+### local only ###
+**.local.only.sql
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# IDEs and editors
+/.idea
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### Secrets ###
+**/application-secrets.yml
+
+#MAC OS
+.DS_Store
+
+### Python ###
+**.pyc
+**/__pycache__/
+venv
+
+~$*
+
+### Jasper ###
+*.jasper
+*.class
